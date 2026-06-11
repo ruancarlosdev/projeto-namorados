@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz dia dos namorados! </title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="logo.png" alt="" width="50px">
+        </div>
+        <nav>
+            <a href="#"> Início</a>
+            <a href="#"> Séries</a>
+            <a href="#"> Filmes</a>
+            <a href="#"> Minha lista</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo"> Ruan e Lívia </p>
+            <p class="detalhes">
+                <span> 12 DE JUNHO,  3 TEMPORADAS</span>
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                </span>
+                <p class="descricao">
+                    Nosso amor não precisa ser perfeito, porque ele é verdadeiro. A gente se entende no olhar, se apoia nas dificuldades e se diverte nas coisas mais simples. Já passamos por momentos bons e outros nem tanto, mas em todos eles, estar ao seu lado fez tudo valer a pena.
+                   
+                    Feliz Dia dos Namorados! Te amo com tudo o que sou.
+                </p>
+                <div class="botoes">
+                    <button> <i class="fa-solid fa-play"></i> Continuar</button>
+                    <button> <i class="fa-solid fa-star"></i> Favorito</button>
+                </div>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="momentos">
+        <h2>Nossos Melhores Momentos </h2>
+
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="./fotos/1.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/2.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/3.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/4.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/5.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/1.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/2.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/3.png"> </div>
+            <div class="swiper-slide"> <img src="./fotos/4.png"> </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        2025 - Luiz
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction:false,
+            },
+            slidesPerView:2,
+            spaceBetween: 10,
+            loop:true,
+            breakpoints: {
+                600: {
+                    loop:true,
+                    slidesPerView:3,
+                    spaceBetween: 15,
+                },
+                900: {
+                    loop:true,
+                    slidesPerView:4,
+                    spaceBetween: 40,       
+                }
+            }
+            });
+    </script>
+</body>
+</html>
